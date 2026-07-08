@@ -1,65 +1,141 @@
+import { getFeaturedPosts, getAllPosts, categories } from "@/lib/posts";
+import FeaturedPostCard from "@/components/FeaturedPostCard";
+import PostRiverItem from "@/components/PostRiverItem";
+import HeroCarousel from "@/components/HeroCarousel";
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
+  const featuredPosts = getFeaturedPosts();
+  const allPosts = getAllPosts();
+
+  // For the right sidebar of the hero, show the first 5 latest posts
+  const sidebarPosts = allPosts.slice(0, 5);
+
+  // The rest of the posts for the grid feed (starting from index 5 to avoid duplication of top hero sidebar)
+  const feedPosts = allPosts.slice(5);
+
+  // First grid has 8 posts
+  const firstGridPosts = feedPosts.slice(0, 8);
+
+  // Break banner post (next post in the list)
+  const bannerPost = feedPosts[8];
+
+  // Remaining posts for second grid
+  const secondGridPosts = feedPosts.slice(9);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-16 md:space-y-24">
+      {/* 1. Hero Section (Creative Soccer Culture Style) */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        {/* Left Column: Carousel (75% width) */}
+        <div className="lg:col-span-9">
+          <HeroCarousel posts={featuredPosts} />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Right Column: Stacked Sidebar Stories (25% width) */}
+        <div className="lg:col-span-3 flex flex-col space-y-6">
+          <h2 className="text-xs font-sans uppercase font-bold tracking-widest text-theme-muted pb-1">
+            Latest Stories
+          </h2>
+          <div className="flex flex-col space-y-6">
+            {sidebarPosts.map((post) => {
+              const catObj = categories.find((c) => c.slug === post.category);
+              const catName = catObj ? catObj.name : post.category;
+              return (
+                <article key={post.slug} className="group flex gap-4 items-start">
+                  {post.image && (
+                    <Link href={`/blog/${post.slug}`} className="block relative w-16 h-16 aspect-square overflow-hidden shrink-0">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        sizes="64px"
+                        className="grayscale-image"
+                        unoptimized
+                      />
+                    </Link>
+                  )}
+                  <div className="space-y-1 flex-1 min-w-0">
+                    <span className="text-[10px] uppercase font-bold tracking-widest text-theme-muted block">
+                      {catName}
+                    </span>
+                    <h4 className="text-xs md:text-sm font-sans font-bold leading-snug text-theme-fg line-clamp-2">
+                      <Link href={`/blog/${post.slug}`} className="link-hover">
+                        {post.title}
+                      </Link>
+                    </h4>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* 2. First Grid (8 posts) */}
+      {firstGridPosts.length > 0 && (
+        <section className="space-y-10">
+          <div className="pb-2">
+            <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-theme-fg uppercase">
+              Trending & Latest
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {firstGridPosts.map((post) => (
+              <PostRiverItem key={post.slug} post={post} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 3. Break Banner (Full-Width Highlight Post) */}
+      {bannerPost && (
+        <section className="group w-full relative">
+          <Link href={`/blog/${bannerPost.slug}`} className="block w-full relative aspect-[21/9] md:aspect-[3/1] overflow-hidden">
+            {bannerPost.image && (
+              <Image
+                src={bannerPost.image}
+                alt={bannerPost.title}
+                fill
+                sizes="100vw"
+                className="grayscale-image"
+                unoptimized
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
+          </Link>
+          <div className="absolute bottom-6 md:bottom-10 left-4 md:left-8 right-4 md:right-8 z-10 space-y-3 pointer-events-none">
+            <div className="flex gap-2 pointer-events-auto">
+              <Link
+                href={`/category/${bannerPost.category}`}
+                className="border border-white/40 bg-black/60 hover:bg-black/90 text-white rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
+              >
+                {categories.find((c) => c.slug === bannerPost.category)?.name || bannerPost.category}
+              </Link>
+            </div>
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-sans font-extrabold leading-tight text-white max-w-4xl pointer-events-auto">
+              <Link href={`/blog/${bannerPost.slug}`} className="hover:underline underline-offset-4 decoration-1">
+                {bannerPost.title}
+              </Link>
+            </h2>
+            <p className="text-xs md:text-sm text-white/80 max-w-3xl font-sans line-clamp-2 leading-relaxed hidden sm:block">
+              {bannerPost.excerpt}
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* 4. Second Grid (Remaining posts) */}
+      {secondGridPosts.length > 0 && (
+        <section className="space-y-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {secondGridPosts.map((post) => (
+              <PostRiverItem key={post.slug} post={post} />
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

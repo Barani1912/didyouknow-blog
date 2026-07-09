@@ -4,6 +4,15 @@ import PageHeading from "@/components/PageHeading";
 export const metadata: Metadata = {
   title: "Disclaimer",
   description: "Read the general disclaimers and information warranties of DIDYOUKNOW.",
+  alternates: {
+    canonical: "https://didyouknow.com/disclaimer",
+  },
+  openGraph: {
+    title: "Disclaimer | DIDYOUKNOW",
+    description: "Read the general disclaimers and information warranties of DIDYOUKNOW.",
+    url: "https://didyouknow.com/disclaimer",
+    siteName: "DIDYOUKNOW",
+  },
 };
 
 export default function DisclaimerPage() {

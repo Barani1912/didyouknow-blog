@@ -4,11 +4,41 @@ import PageHeading from "@/components/PageHeading";
 export const metadata: Metadata = {
   title: "About",
   description: "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
+  keywords: ["about didyouknow", "about did you know", "editorial philosophy", "slow journalism", "digital publication"],
+  alternates: {
+    canonical: "https://didyouknow.com/about",
+  },
+  openGraph: {
+    title: "About | DIDYOUKNOW",
+    description: "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
+    url: "https://didyouknow.com/about",
+    siteName: "DIDYOUKNOW",
+  },
 };
 
 export default function AboutPage() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About DIDYOUKNOW",
+    "description": "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
+    "url": "https://didyouknow.com/about",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "DIDYOUKNOW",
+      "url": "https://didyouknow.com",
+      "description": "An independent, digital publication exploring the intersections of software development, sustainable business practices, minimalist lifestyle choices, and design critique."
+    }
+  };
+
   return (
     <div className="space-y-12 max-w-3xl">
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
+
       <PageHeading
         title="About DIDYOUKNOW"
         description="A publication dedicated to slow-form writing, design clarity, and digital restraint."

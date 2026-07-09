@@ -29,15 +29,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  // Generate category-specific keywords for SEO
+  const categoryKeywordsMap: Record<string, string[]> = {
+    tech: ["software engineering", "programming", "technology design", "IT trends", "coding standards"],
+    health: ["wellness", "mental health", "circadian sleep", "healthy habits", "cognitive longevity"],
+    trending: ["viral topics", "trending news", "current events", "latest stories", "cultural perspectives"]
+  };
+  const categorySpecific = categoryKeywordsMap[post.category] || [];
+  const keywords = ["did you know", "didyouknow", post.category, post.title.toLowerCase(), ...categorySpecific];
+
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: keywords,
+    alternates: {
+      canonical: `https://didyouknow.com/blog/${post.slug}`,
+    },
     openGraph: {
       title: `${post.title} | DIDYOUKNOW`,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
+      url: `https://didyouknow.com/blog/${post.slug}`,
+      siteName: "DIDYOUKNOW",
     },
   };
 }
@@ -68,8 +83,39 @@ export default async function PostPage({ params }: PageProps) {
     .filter((p) => p.slug !== post.slug && !relatedPosts.some((r) => r.slug === p.slug))
     .slice(0, 3);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image ? `https://didyouknow.com${post.image}` : undefined,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Person",
+      "name": post.author,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DIDYOUKNOW",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://didyouknow.com/icon.png",
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://didyouknow.com/blog/${post.slug}`,
+    },
+  };
+
   return (
     <div className="relative">
+      {/* JSON-LD Article Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
       {/* Dynamic Scroll Progress Bar */}
       <ScrollProgress />
 

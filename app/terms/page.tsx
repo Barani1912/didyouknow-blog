@@ -4,6 +4,15 @@ import PageHeading from "@/components/PageHeading";
 export const metadata: Metadata = {
   title: "Terms and Conditions",
   description: "Read the Terms and Conditions and terms of use of DIDYOUKNOW.",
+  alternates: {
+    canonical: "https://didyouknow.com/terms",
+  },
+  openGraph: {
+    title: "Terms and Conditions | DIDYOUKNOW",
+    description: "Read the Terms and Conditions and terms of use of DIDYOUKNOW.",
+    url: "https://didyouknow.com/terms",
+    siteName: "DIDYOUKNOW",
+  },
 };
 
 export default function TermsPage() {

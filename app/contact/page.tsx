@@ -5,11 +5,40 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with the editorial team at DIDYOUKNOW.",
+  keywords: ["contact didyouknow", "contact did you know", "support", "editorial team", "contributions"],
+  alternates: {
+    canonical: "https://didyouknow.com/contact",
+  },
+  openGraph: {
+    title: "Contact | DIDYOUKNOW",
+    description: "Get in touch with the editorial team at DIDYOUKNOW.",
+    url: "https://didyouknow.com/contact",
+    siteName: "DIDYOUKNOW",
+  },
 };
 
 export default function ContactPage() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact DIDYOUKNOW",
+    "description": "Get in touch with the editorial team at DIDYOUKNOW.",
+    "url": "https://didyouknow.com/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "DIDYOUKNOW",
+      "url": "https://didyouknow.com"
+    }
+  };
+
   return (
     <div className="space-y-12 max-w-3xl">
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+
       <PageHeading
         title="Contact Us"
         description="We welcome inquiries, editorial feedback, and contributions."

@@ -18,16 +18,42 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://didyouknow.com"),
   title: {
     template: "%s | DIDYOUKNOW",
     default: "DIDYOUKNOW",
   },
   description: "Ideas, essays, and perspectives on technology, business, and culture.",
+  keywords: [
+    "did you know",
+    "didyouknow",
+    "DIDYOUKNOW",
+    "did you know blog",
+    "tech and health blog",
+    "technology",
+    "health",
+    "trending stories",
+    "slow journalism",
+    "perspectives",
+    "digital minimalism"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "DIDYOUKNOW",
     description: "Ideas, essays, and perspectives on technology, business, and culture.",
     type: "website",
     locale: "en_US",
+    siteName: "DIDYOUKNOW",
   },
 };
 

@@ -4,6 +4,15 @@ import PageHeading from "@/components/PageHeading";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Learn about the privacy practices, data collection, and cookie policies of DIDYOUKNOW.",
+  alternates: {
+    canonical: "https://didyouknow.com/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | DIDYOUKNOW",
+    description: "Learn about the privacy practices, data collection, and cookie policies of DIDYOUKNOW.",
+    url: "https://didyouknow.com/privacy-policy",
+    siteName: "DIDYOUKNOW",
+  },
 };
 
 export default function PrivacyPolicyPage() {

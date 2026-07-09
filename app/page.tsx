@@ -4,6 +4,33 @@ import PostRiverItem from "@/components/PostRiverItem";
 import HeroCarousel from "@/components/HeroCarousel";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "DIDYOUKNOW | Tech, Health & Trending Stories",
+  description: "Explore thought-provoking essays, perspectives, and did you know facts about technology, health, and trending cultural events at DIDYOUKNOW.",
+  keywords: [
+    "did you know",
+    "didyouknow",
+    "DIDYOUKNOW",
+    "did you know blog",
+    "tech essays",
+    "health advice",
+    "trending stories",
+    "slow journalism",
+    "digital minimalism"
+  ],
+  alternates: {
+    canonical: "https://didyouknow.com",
+  },
+  openGraph: {
+    title: "DIDYOUKNOW | Tech, Health & Trending Stories",
+    description: "Explore thought-provoking essays, perspectives, and did you know facts about technology, health, and trending cultural events at DIDYOUKNOW.",
+    url: "https://didyouknow.com",
+    siteName: "DIDYOUKNOW",
+    type: "website",
+  },
+};
 
 export default function HomePage() {
   const featuredPosts = getFeaturedPosts();
@@ -24,8 +51,33 @@ export default function HomePage() {
   // Remaining posts for second grid
   const secondGridPosts = feedPosts.slice(9);
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DIDYOUKNOW",
+    "alternateName": ["didyouknow", "did you know", "DID YOU KNOW"],
+    "url": "https://didyouknow.com",
+    "description": "Ideas, essays, and perspectives on technology, business, and culture."
+  };
+
   return (
     <div className="space-y-16 md:space-y-24">
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+
+      {/* Elegant Typographic Masthead / Intro Header (Semantic H1) */}
+      <header className="border-b border-theme-border/10 pb-6 md:pb-8">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-normal leading-tight tracking-tight uppercase text-theme-fg">
+          DIDYOUKNOW
+        </h1>
+        <p className="font-sans text-xs md:text-sm uppercase tracking-widest text-theme-muted mt-2 md:mt-3 max-w-2xl leading-relaxed">
+          Ideas, essays, and perspectives on technology, business, and culture. Exploring the latest trends in tech, health, and design.
+        </p>
+      </header>
+
       {/* 1. Hero Section (Creative Soccer Culture Style) */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Carousel (75% width) */}

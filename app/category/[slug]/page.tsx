@@ -26,12 +26,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const categoryKeywordsMap: Record<string, string[]> = {
+    tech: ["software engineering", "programming", "technology design", "IT trends", "coding standards", "computer science"],
+    health: ["wellness", "mental health", "physical fitness", "circadian rhythm", "cognitive longevity", "medical updates"],
+    trending: ["viral topics", "current events", "trending news", "latest updates", "popular culture"]
+  };
+  const categorySpecific = categoryKeywordsMap[slug] || [];
+  const keywords = ["did you know", "didyouknow", category.name.toLowerCase(), ...categorySpecific];
+
   return {
     title: category.name,
     description: category.description,
+    keywords: keywords,
+    alternates: {
+      canonical: `https://didyouknow.com/category/${category.slug}`,
+    },
     openGraph: {
       title: `${category.name} | DIDYOUKNOW`,
       description: category.description,
+      url: `https://didyouknow.com/category/${category.slug}`,
+      siteName: "DIDYOUKNOW",
     },
   };
 }
@@ -46,8 +60,36 @@ export default async function CategoryPage({ params }: PageProps) {
 
   const categoryPosts = getPostsByCategory(slug);
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${category.name} Articles | DIDYOUKNOW`,
+    "description": category.description,
+    "url": `https://didyouknow.com/category/${category.slug}`,
+    "publisher": {
+      "@type": "Organization",
+      "name": "DIDYOUKNOW",
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": categoryPosts.length,
+      "itemListElement": categoryPosts.map((post, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "url": `https://didyouknow.com/blog/${post.slug}`,
+        "name": post.title,
+      })),
+    },
+  };
+
   return (
     <div className="space-y-16">
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+
       {/* Category Header */}
       <PageHeading title={category.name} description={category.description} />
 

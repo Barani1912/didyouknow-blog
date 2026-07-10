@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+    "deploy": "next build && wrangler pages deploy out",
+    "preview": "next build && wrangler pages dev out"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

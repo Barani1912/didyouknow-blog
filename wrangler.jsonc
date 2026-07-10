@@ -1,22 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "didyouknow-blog",
-  "main": ".open-next/worker.js",
   "compatibility_date": "2026-07-08",
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
-  },
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "didyouknow-blog"
-    }
-  ]
+  "pages_build_output_dir": "out"
 }

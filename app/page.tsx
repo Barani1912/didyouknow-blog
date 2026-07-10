@@ -68,15 +68,9 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
-      {/* Elegant Typographic Masthead / Intro Header (Semantic H1) */}
-      <header className="border-b border-theme-border/10 pb-6 md:pb-8">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-normal leading-tight tracking-tight uppercase text-theme-fg">
-          DIDYOUKNOW
-        </h1>
-        <p className="font-sans text-xs md:text-sm uppercase tracking-widest text-theme-muted mt-2 md:mt-3 max-w-2xl leading-relaxed">
-          Ideas, essays, and perspectives on technology, business, and culture. Exploring the latest trends in tech, health, and design.
-        </p>
-      </header>
+      <h1 className="sr-only">DIDYOUKNOW - Ideas, essays, and perspectives on technology, business, and culture.</h1>
+
+
 
       {/* 1. Hero Section (Creative Soccer Culture Style) */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

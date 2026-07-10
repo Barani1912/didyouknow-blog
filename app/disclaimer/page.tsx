@@ -40,6 +40,7 @@ export default function DisclaimerPage() {
             While we make every effort to publish accurate, thoroughly researched, and high-quality content, DIDYOUKNOW makes no representations or warranties of any kind, express or implied, regarding the completeness, accuracy, reliability, timeliness, or availability of the website or the information, products, services, or related graphics contained on the site for any purpose.
           </p>
         </section>
+        
 
         <section className="space-y-3">
           <h2 className="font-serif text-xl md:text-2xl font-normal text-black">3. Limitation of Liability</h2>

@@ -30,7 +30,7 @@ export default function PostRiverItem({ post, showCategory = true }: PostRiverIt
             <div className="absolute bottom-3 left-3 z-10 flex gap-2">
               <Link
                 href={`/category/${post.category}`}
-                className="border border-white/40 bg-black/60 hover:bg-black/85 text-white rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
+                className="border border-[#ffffff]/40 bg-[#000000]/60 hover:bg-[#000000]/85 text-[#ffffff] rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
               >
                 {categoryName}
               </Link>

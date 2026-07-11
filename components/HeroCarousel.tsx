@@ -49,21 +49,21 @@ export default function HeroCarousel({ posts }: HeroCarouselProps) {
         <div className="flex gap-2 pointer-events-auto">
           <Link
             href={`/category/${currentPost.category}`}
-            className="border border-white/40 bg-black/60 hover:bg-black/90 text-white rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
+            className="border border-[#ffffff]/40 bg-[#000000]/60 hover:bg-[#000000]/90 text-[#ffffff] rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
           >
             {categoryName}
           </Link>
         </div>
 
         {/* Post Title */}
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-extrabold leading-tight text-white max-w-3xl pointer-events-auto">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-sans font-extrabold leading-tight text-[#ffffff] max-w-3xl pointer-events-auto">
           <Link href={`/blog/${currentPost.slug}`} className="hover:underline underline-offset-4 decoration-1">
             {currentPost.title}
           </Link>
         </h2>
 
         {/* Excerpt */}
-        <p className="text-xs md:text-sm text-white/80 max-w-2xl font-sans line-clamp-2 leading-relaxed hidden sm:block">
+        <p className="text-xs md:text-sm text-[#ffffff]/80 max-w-2xl font-sans line-clamp-2 leading-relaxed hidden sm:block">
           {currentPost.excerpt}
         </p>
 
@@ -75,7 +75,7 @@ export default function HeroCarousel({ posts }: HeroCarouselProps) {
               onClick={() => setCurrentIndex(idx)}
               aria-label={`Go to slide ${idx + 1}`}
               className={`h-0.5 rounded-full transition-all duration-300 cursor-pointer ${
-                idx === currentIndex ? "w-8 bg-white" : "w-4 bg-white/40 hover:bg-white/60"
+                idx === currentIndex ? "w-8 bg-[#ffffff]" : "w-4 bg-[#ffffff]/40 hover:bg-[#ffffff]/60"
               }`}
             />
           ))}

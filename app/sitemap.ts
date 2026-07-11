@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Policy and institutional routes
   const baseRoutes = [
     "",
+    "/unnoticed",
     "/about",
     "/contact",
     "/privacy-policy",

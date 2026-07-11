@@ -155,17 +155,17 @@ export default function HomePage() {
             <div className="flex gap-2 pointer-events-auto">
               <Link
                 href={`/category/${bannerPost.category}`}
-                className="border border-white/40 bg-black/60 hover:bg-black/90 text-white rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
+                className="border border-[#ffffff]/40 bg-[#000000]/60 hover:bg-[#000000]/90 text-[#ffffff] rounded-full px-3 py-1.5 text-[9px] font-sans uppercase font-bold tracking-widest backdrop-blur-xs transition-colors duration-200"
               >
                 {categories.find((c) => c.slug === bannerPost.category)?.name || bannerPost.category}
               </Link>
             </div>
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-sans font-extrabold leading-tight text-white max-w-4xl pointer-events-auto">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-sans font-extrabold leading-tight text-[#ffffff] max-w-4xl pointer-events-auto">
               <Link href={`/blog/${bannerPost.slug}`} className="hover:underline underline-offset-4 decoration-1">
                 {bannerPost.title}
               </Link>
             </h2>
-            <p className="text-xs md:text-sm text-white/80 max-w-3xl font-sans line-clamp-2 leading-relaxed hidden sm:block">
+            <p className="text-xs md:text-sm text-[#ffffff]/80 max-w-3xl font-sans line-clamp-2 leading-relaxed hidden sm:block">
               {bannerPost.excerpt}
             </p>
           </div>

@@ -85,6 +85,12 @@ export default function Header() {
                 {category.name}
               </Link>
             ))}
+            <Link
+              href="/unnoticed"
+              className="text-xs font-sans uppercase font-bold tracking-widest text-theme-fg transition-all link-hover py-1"
+            >
+              Unnoticed
+            </Link>
           </nav>
 
           {/* Theme Toggle Button */}
@@ -151,6 +157,13 @@ export default function Header() {
               {category.name}
             </Link>
           ))}
+          <Link
+            href="/unnoticed"
+            onClick={closeMenu}
+            className="text-xs font-sans uppercase font-bold tracking-widest text-theme-fg py-2.5 link-hover w-max"
+          >
+            Unnoticed
+          </Link>
         </nav>
       )}
     </header>

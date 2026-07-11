@@ -39,6 +39,12 @@ export default function Footer() {
                   {category.name}
                 </Link>
               ))}
+              <Link
+                href="/unnoticed"
+                className="text-xs font-sans uppercase font-medium tracking-wider text-[#ffffff] transition-all link-hover w-max"
+              >
+                Unnoticed
+              </Link>
             </nav>
           </div>
 

@@ -5,7 +5,7 @@ excerpt: "Our shift from physical media ownership to cloud-based streaming subsc
 author: "Arthur Pendragon"
 date: "2026-06-08T09:15:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 For decades, the accumulation of culture was a physical endeavor. We filled bookshelves with novels, stacked cabinets with records and compact discs, and preserved family moments in albums of physical film. These physical artifacts represented a tangible history of our tastes, experiences, and memories. They were permanent possessions that could be lent to friends, passed down to children, or donated to libraries, surviving independent of the market.
 

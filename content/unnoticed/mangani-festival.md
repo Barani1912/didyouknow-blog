@@ -2,7 +2,7 @@
 title: "The Mangani Festival of Karaikal"
 excerpt: "Every year in Puducherry, a historic festival takes place where tens of thousands of devotees throw over 30 tons of ripe mangoes onto the streets in celebration."
 date: "2026-07-11"
-image: "/images/trending.png"
+image: "/images/trending.webp"
 featured: false
 ---
 

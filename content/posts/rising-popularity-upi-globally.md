@@ -5,7 +5,7 @@ excerpt: "India's real-time mobile payment system is expanding into European and
 author: "Siddharth Mehta"
 date: "2026-06-12T10:30:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 In India's bustling city markets, cash has quickly transitioned from a necessity to an afterthought. From vegetable vendors to high-end boutiques, transactions are completed in seconds using a smartphone and a QR code. This digital payment revolution is powered by the Unified Payments Interface (UPI), a public utility that has transformed India's financial sector.
 

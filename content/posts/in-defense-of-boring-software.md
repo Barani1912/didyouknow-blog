@@ -5,7 +5,7 @@ excerpt: "In a tech landscape obsessed with the latest frameworks and paradigm s
 author: "Marcus Vance"
 date: "2026-06-02T10:00:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 The software engineering industry is fueled by a relentless cycle of hype. Every month, a new framework, programming language, or database paradigm is heralded as the silver bullet that will solve all development woes. Engineers rush to rewrite existing codebases, eager to keep their skills relevant and work with the latest tooling, often ignoring the hidden costs of migration and complexity.
 

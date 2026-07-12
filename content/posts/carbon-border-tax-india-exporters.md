@@ -5,7 +5,7 @@ excerpt: "Facing strict new environmental tariffs in European markets, local ste
 author: "Clara Dupont"
 date: "2026-04-18T14:15:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 India's heavy manufacturing exporters are facing a significant structural challenge. The European Union's Carbon Border Adjustment Mechanism (CBAM)—commonly referred to as the carbon tax—has begun imposing tariffs on carbon-intensive imports like steel, cement, and aluminum. This policy aims to equalize the cost of carbon between domestic producers and imports, penalizing manufacturers that rely on fossil fuels.
 

@@ -5,7 +5,7 @@ excerpt: "Short, structured pauses throughout the workday are vital for preventi
 author: "Marie Curie"
 date: "2026-06-18T11:30:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 The demands of modern knowledge work encourage a habit of sustained, continuous focus. We sit at our desks for hours, typing, analyzing data, and attending virtual meetings, believing that by working without interruption, we maximize our output. However, this prolonged cognitive effort drains our mental resources, leading to eye strain, physical fatigue, and a decline in decision-making quality.
 

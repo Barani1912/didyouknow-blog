@@ -5,7 +5,7 @@ excerpt: "Escaping the digital landscape for a long, aimless walk without a phon
 author: "Virginia Woolf"
 date: "2026-05-15T15:00:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 Our waking hours are dominated by structured attention. We sit before screens that demand our focus, respond to notifications that interrupt our thoughts, and follow schedules that divide our days into neat intervals. This voluntary, directed attention is a finite resource that is easily exhausted, leading to mental fatigue, irritability, and a decline in creative thinking.
 

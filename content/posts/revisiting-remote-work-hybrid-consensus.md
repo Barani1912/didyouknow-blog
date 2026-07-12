@@ -5,7 +5,7 @@ excerpt: "After years of corporate tug-of-war, a stable compromise has emerged i
 author: "David Chen"
 date: "2026-05-30T11:15:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 The open-plan office was marketed as a revolutionary concept that would tear down corporate hierarchies and foster spontaneous collaboration. By removing physical walls and cubicle partitions, companies hoped to create a dynamic environment where ideas could flow freely across departments. It was a design driven by a desire for synergy, but it ignored the fundamental nature of human concentration.
 

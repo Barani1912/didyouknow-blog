@@ -5,7 +5,7 @@ excerpt: "Adjusting our exposure to blue and warm light throughout the day is pr
 author: "Florence Nightingale"
 date: "2026-05-22T16:00:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 In our modern, urban environments, we spend the vast majority of our time indoors, insulated from natural light. We sit under static, fluorescent office lighting during the day and look at glowing LED screens at night. This constant exposure to artificial light disrupts our body's internal clock—the circadian rhythm—leading to sleep disturbances, fatigue, and a decline in overall physical and mental well-being.
 

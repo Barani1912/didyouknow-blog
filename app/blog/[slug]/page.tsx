@@ -147,6 +147,7 @@ export default async function PostPage({ params }: PageProps) {
                 alt={post.title}
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 1024px) 100vw, 70vw"
                 className="grayscale-image"
                 unoptimized

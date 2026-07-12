@@ -5,7 +5,7 @@ excerpt: "As the carbon footprint of data centers grows, a small group of design
 author: "Nadia Youssef"
 date: "2026-04-15T15:20:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 The internet is often imagined as a weightless, ethereal cloud, existing independent of the physical world. In reality, the digital network is supported by a massive infrastructure of data centers, fiber-optic cables, and transmission towers that consume vast amounts of electricity. As web applications grow larger and more resource-intensive, the carbon footprint of our online activity has expanded to rival that of the global aviation industry.
 

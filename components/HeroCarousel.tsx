@@ -35,6 +35,7 @@ export default function HeroCarousel({ posts }: HeroCarouselProps) {
           alt={currentPost.title}
           fill
           priority
+          fetchPriority="high"
           sizes="(max-width: 1024px) 100vw, 70vw"
           className="grayscale-image"
           unoptimized

@@ -5,7 +5,7 @@ excerpt: "In a web development ecosystem dominated by proprietary browser additi
 author: "Diana Prince"
 date: "2026-05-25T11:00:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 The rapid pace of web development has birthed an ecosystem where new technologies are introduced and discarded with dizzying frequency. Modern developers are encouraged to rely on complex, abstraction-heavy frameworks and proprietary browser APIs to build even the simplest of web applications. This reliance has created a fragile web, where sites often fail to load on older devices or break when a single developer deprecates a minor package in a dependency chain.
 

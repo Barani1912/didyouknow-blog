@@ -5,7 +5,7 @@ excerpt: "In a world of constant auditory pollution, intentional exposure to per
 author: "Jonas Salk"
 date: "2026-04-18T14:15:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 We live in an increasingly loud world. Urban environments are characterized by a constant cacophony of traffic, sirens, construction, and public address systems. This continuous noise is not just an annoyance; it is a form of environmental pollution that triggers the body's stress response, raising cortisol levels, increasing blood pressure, and raising the risk of cardiovascular disease.
 

@@ -2,7 +2,7 @@
 title: "Ladakh's Gravity-Defying Magnetic Hill"
 excerpt: "Nestled along the Srinagar-Leh highway, a mysterious stretch of road appears to pull stationary vehicles uphill, defying the laws of gravity."
 date: "2026-07-10"
-image: "/images/tech.png"
+image: "/images/tech.webp"
 featured: false
 ---
 

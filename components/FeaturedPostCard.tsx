@@ -26,6 +26,7 @@ export default function FeaturedPostCard({ post, isLead = true }: FeaturedPostCa
               sizes="(max-width: 1024px) 100vw, 60vw"
               className="grayscale-image"
               priority
+              fetchPriority="high"
               unoptimized
             />
           </Link>

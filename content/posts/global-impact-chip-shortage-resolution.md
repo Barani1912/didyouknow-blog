@@ -5,7 +5,7 @@ excerpt: "The opening of advanced fabrication facilities in Ohio and Gujarat mar
 author: "Sarah Jenkins"
 date: "2026-06-20T09:00:00.000Z"
 featured: true
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 The global semiconductor shortage that plagued industries for years has finally drawn to a close, resolved by a massive expansion of manufacturing capacity. New, advanced fabrication facilities—commonly known as "fabs"—have begun operations in key hubs, including Ohio in the United States and Gujarat in India. This expansion has successfully resolved the supply chain bottlenecks that delayed production of automobiles, smartphones, and medical equipment.
 

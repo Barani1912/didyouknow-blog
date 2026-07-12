@@ -2,7 +2,7 @@
 title: "The Meteorite Impact Crater at Lonar Lake"
 excerpt: "Formed over 50,000 years ago by a hyper-velocity meteorite impact, this saline-alkaline crater lake in Maharashtra is a geological anomaly that baffles scientists."
 date: "2026-07-08"
-image: "/images/culture.png"
+image: "/images/culture.webp"
 featured: false
 ---
 

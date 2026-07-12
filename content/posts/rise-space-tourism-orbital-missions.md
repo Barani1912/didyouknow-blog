@@ -5,7 +5,7 @@ excerpt: "A record number of private orbital flights this year marks a turning p
 author: "Lucas Thorne"
 date: "2026-03-29T10:45:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 A series of record-breaking orbital missions has marked a significant transition in aerospace history. Once the exclusive domain of national governments, spaceflight is rapidly becoming a commercial marketplace. Private orbital flights carrying civilians, researchers, and commercial partners have flown with unprecedented frequency, establishing a permanent commercial presence in Low Earth Orbit.
 

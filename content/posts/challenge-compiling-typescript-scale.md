@@ -5,7 +5,7 @@ excerpt: "As codebases scale to millions of lines, the performance of the compil
 author: "Alan Turing"
 date: "2026-04-05T10:30:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 As TypeScript has grown to become the dominant language of modern web development, codebases have expanded in size and complexity. Organizations routinely manage repositories containing millions of lines of TypeScript code, supported by complex dependency graphs and build pipelines. At this scale, the time required to compile and type-check code has emerged as a significant bottleneck, directly impacting developer productivity and deployment velocity.
 

@@ -5,7 +5,7 @@ excerpt: "Minimalism isn't just about clearing physical clutter. Decluttering ou
 author: "Anna Lindqvist"
 date: "2026-05-05T09:45:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 The tools of the digital age were introduced as conveniences designed to connect us and simplify our lives. However, over the past two decades, these tools have quietly expanded to dominate our waking hours. The average person checks their smartphone dozens of times a day, responding to a constant stream of notifications, updates, and messages that fragment their attention.
 

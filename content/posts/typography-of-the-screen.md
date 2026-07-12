@@ -5,7 +5,7 @@ excerpt: "Exploring how subpixel rendering, high-density displays, and modern we
 author: "Siddharth Mehta"
 date: "2026-04-20T14:30:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 For centuries, the printed page was the ultimate medium for the written word. Typographers developed precise rules for line length, leading, and character spacing, all optimized for the reflective properties of ink on paper. When reading migrated to screens, these rules were initially discarded in favor of system default fonts and fluid, unconstrained layouts that stretched from edge to edge of wide monitors.
 

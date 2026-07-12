@@ -5,7 +5,7 @@ excerpt: "How the sensory process of weighing, grinding, and brewing coffee serv
 author: "Matteo Rossi"
 date: "2026-04-12T06:15:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 In our hurry to start the day, breakfast is often reduced to a hurried convenience. We drink instant coffee from a paper cup while checking emails, or grab a processed pastry on the way to the subway. These morning habits are designed for speed, but they deny us a valuable opportunity to anchor ourselves before the demands of the day begin.
 

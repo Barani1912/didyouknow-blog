@@ -5,7 +5,7 @@ excerpt: "Curators at this year's landmark exhibition are rejecting flashy visua
 author: "Harriet Cole"
 date: "2026-06-22T13:00:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 For decades, design exhibitions were dominated by high-tech, interactive displays that relied on sensory overload. Galleries competed to showcase the latest projection mappings, holographic structures, and virtual reality simulations. However, this year's Biennale has marked a dramatic shift away from digital spectacle in favor of physical materiality and structural restraint.
 

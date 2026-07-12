@@ -5,7 +5,7 @@ excerpt: "Our brains were never wired to multitask. By deliberately doing one th
 author: "James Baldwin III"
 date: "2026-06-10T07:30:00.000Z"
 featured: true
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 We live in an era that glorifies multitasking. We listen to podcasts while cooking dinner, check emails during meetings, and reply to text messages while walking down the street. We believe that by doing multiple things at once, we are maximizing our productivity and squeezing the most value out of our limited time. But this constant switching is an illusion.
 

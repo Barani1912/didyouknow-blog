@@ -5,7 +5,7 @@ excerpt: "In a world of meal delivery apps and instant food, the process of prep
 author: "Alice Waters"
 date: "2026-06-05T17:30:00.000Z"
 featured: false
-image: "/images/health.png"
+image: "/images/health.webp"
 ---
 Modern food culture is driven by the pursuit of convenience. Meal delivery apps promise restaurant-quality food at our doorsteps in minutes, while supermarket aisles are filled with pre-chopped, pre-cooked, and processed meals designed to eliminate the effort of cooking. We have outsourced the preparation of our food to corporations, treating cooking as a chore to be avoided.
 

@@ -5,7 +5,7 @@ excerpt: "As platforms increasingly prioritize predictive models to capture huma
 author: "Elena Rostova"
 date: "2026-05-12T08:00:00.000Z"
 featured: true
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 For the past decade, our interaction with the digital world has been mediated by predictive models. Algorithms designed to maximize engagement have quietly replaced the chronological feeds of the early web, dictating what we read, what we buy, and what we think. What began as a convenience has slowly hardened into an intellectual monoculture, where the loudest and most controversial voices are automatically amplified.
 

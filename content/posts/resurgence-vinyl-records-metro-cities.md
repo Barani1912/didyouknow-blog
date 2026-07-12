@@ -5,7 +5,7 @@ excerpt: "From Mumbai to Bangalore, a new wave of audiophile listening bars is p
 author: "Elena Rostova"
 date: "2026-05-02T16:00:00.000Z"
 featured: false
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 In the age of infinite streaming catalogs and algorithm-generated playlists, music has become background noise. We play millions of tracks from the cloud while working or commuting, rarely focusing on the art itself. However, in major urban hubs like Mumbai, Delhi, and Bangalore, a growing collective of young listeners is turning away from their screens in favor of vinyl records.
 

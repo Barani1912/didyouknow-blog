@@ -5,7 +5,7 @@ excerpt: "The modern software industry often treats programming as an industrial
 author: "Winston Churchill"
 date: "2026-05-19T14:00:00.000Z"
 featured: false
-image: "/images/tech.png"
+image: "/images/tech.webp"
 ---
 The modern technology sector often models its operations on industrial manufacturing. Software developers are treated as replaceable units on an assembly line, writing code according to standardized specifications under the guidance of project managers who track metrics and velocity. This assembly-line model is designed to maximize output, but it often destroys the sense of craft and ownership that leads to exceptional engineering.
 

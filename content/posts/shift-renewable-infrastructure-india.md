@@ -5,7 +5,7 @@ excerpt: "As solar and wind installations expand across Rajasthan and Tamil Nadu
 author: "Rohan Sen"
 date: "2026-06-25T08:00:00.000Z"
 featured: true
-image: "/images/trending.png"
+image: "/images/trending.webp"
 ---
 Across the vast deserts of Rajasthan and the wind-swept plains of Tamil Nadu, a massive transformation is reshaping India's energy landscape. Solar and wind installations are expanding at an unprecedented rate, driven by a combination of government support, falling technology costs, and urgent climate concerns. The Pavagada Solar Park in Karnataka, one of the largest solar installations in the world, stands as a monument to this green transition, producing gigawatts of clean electricity to power millions of homes.
 

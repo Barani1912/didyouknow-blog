@@ -2,7 +2,7 @@
 title: "The Living Root Bridges of Meghalaya"
 excerpt: "Deep in the wettest place on Earth, indigenous Khasi communities have spent generations growing functional suspension bridges from the roots of living trees."
 date: "2026-07-09"
-image: "/images/health.png"
+image: "/images/health.webp"
 featured: false
 ---
 

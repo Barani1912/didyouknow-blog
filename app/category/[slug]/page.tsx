@@ -39,12 +39,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: category.description,
     keywords: keywords,
     alternates: {
-      canonical: `https://didyouknow.com/category/${category.slug}`,
+      canonical: `https://didyouknow.in/category/${category.slug}`,
     },
     openGraph: {
       title: `${category.name} | DIDYOUKNOW`,
       description: category.description,
-      url: `https://didyouknow.com/category/${category.slug}`,
+      url: `https://didyouknow.in/category/${category.slug}`,
       siteName: "DIDYOUKNOW",
     },
   };
@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }: PageProps) {
     "@type": "CollectionPage",
     "name": `${category.name} Articles | DIDYOUKNOW`,
     "description": category.description,
-    "url": `https://didyouknow.com/category/${category.slug}`,
+    "url": `https://didyouknow.in/category/${category.slug}`,
     "publisher": {
       "@type": "Organization",
       "name": "DIDYOUKNOW",
@@ -76,7 +76,7 @@ export default async function CategoryPage({ params }: PageProps) {
       "itemListElement": categoryPosts.map((post, idx) => ({
         "@type": "ListItem",
         "position": idx + 1,
-        "url": `https://didyouknow.com/blog/${post.slug}`,
+        "url": `https://didyouknow.in/blog/${post.slug}`,
         "name": post.title,
       })),
     },

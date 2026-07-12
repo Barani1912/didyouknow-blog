@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.excerpt,
     keywords: keywords,
     alternates: {
-      canonical: `https://didyouknow.com/blog/${post.slug}`,
+      canonical: `https://didyouknow.in/blog/${post.slug}`,
     },
     openGraph: {
       title: `${post.title} | DIDYOUKNOW`,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
-      url: `https://didyouknow.com/blog/${post.slug}`,
+      url: `https://didyouknow.in/blog/${post.slug}`,
       siteName: "DIDYOUKNOW",
     },
   };
@@ -88,7 +88,7 @@ export default async function PostPage({ params }: PageProps) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "image": post.image ? `https://didyouknow.com${post.image}` : undefined,
+    "image": post.image ? `https://didyouknow.in${post.image}` : undefined,
     "datePublished": post.date,
     "author": {
       "@type": "Person",
@@ -99,12 +99,12 @@ export default async function PostPage({ params }: PageProps) {
       "name": "DIDYOUKNOW",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://didyouknow.com/icon.png",
+        "url": "https://didyouknow.in/icon.png",
       },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://didyouknow.com/blog/${post.slug}`,
+      "@id": `https://didyouknow.in/blog/${post.slug}`,
     },
   };
 

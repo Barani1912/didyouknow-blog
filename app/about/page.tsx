@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
   keywords: ["about didyouknow", "about did you know", "editorial philosophy", "slow journalism", "digital publication"],
   alternates: {
-    canonical: "https://didyouknow.com/about",
+    canonical: "https://didyouknow.in/about",
   },
   openGraph: {
     title: "About | DIDYOUKNOW",
     description: "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
-    url: "https://didyouknow.com/about",
+    url: "https://didyouknow.in/about",
     siteName: "DIDYOUKNOW",
   },
 };
@@ -22,11 +22,11 @@ export default function AboutPage() {
     "@type": "AboutPage",
     "name": "About DIDYOUKNOW",
     "description": "Learn about the philosophy, editorial guidelines, and slow-journalism approach of DIDYOUKNOW.",
-    "url": "https://didyouknow.com/about",
+    "url": "https://didyouknow.in/about",
     "mainEntity": {
       "@type": "Organization",
       "name": "DIDYOUKNOW",
-      "url": "https://didyouknow.com",
+      "url": "https://didyouknow.in",
       "description": "An independent, digital publication exploring the intersections of software development, sustainable business practices, minimalist lifestyle choices, and design critique."
     }
   };

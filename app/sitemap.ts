@@ -4,7 +4,7 @@ import { posts, categories } from "@/lib/posts";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://didyouknow.com";
+  const baseUrl = "https://didyouknow.in";
 
   // Policy and institutional routes
   const baseRoutes = [

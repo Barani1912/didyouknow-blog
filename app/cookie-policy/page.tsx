@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Cookie Policy",
   description: "Learn what cookies are, how we use them, and how you can manage cookie preferences on DIDYOUKNOW.",
   alternates: {
-    canonical: "https://didyouknow.com/cookie-policy",
+    canonical: "https://didyouknow.in/cookie-policy",
   },
   openGraph: {
     title: "Cookie Policy | DIDYOUKNOW",
     description: "Learn what cookies are, how we use them, and how you can manage cookie preferences on DIDYOUKNOW.",
-    url: "https://didyouknow.com/cookie-policy",
+    url: "https://didyouknow.in/cookie-policy",
     siteName: "DIDYOUKNOW",
   },
 };

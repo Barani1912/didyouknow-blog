@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "magnetic hill"
   ],
   alternates: {
-    canonical: "https://didyouknow.com/unnoticed",
+    canonical: "https://didyouknow.in/unnoticed",
   },
   openGraph: {
     title: "Unnoticed Stories & Facts | DIDYOUKNOW",
     description: "Explore the fascinating, gravity-defying, and historically rich facts that slip quietly under the mainstream radar.",
-    url: "https://didyouknow.com/unnoticed",
+    url: "https://didyouknow.in/unnoticed",
     type: "website",
   },
 };

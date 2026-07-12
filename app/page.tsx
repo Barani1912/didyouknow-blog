@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     "digital minimalism"
   ],
   alternates: {
-    canonical: "https://didyouknow.com",
+    canonical: "https://didyouknow.in",
   },
   openGraph: {
     title: "DIDYOUKNOW | Tech, Health & Trending Stories",
     description: "Explore thought-provoking essays, perspectives, and did you know facts about technology, health, and trending cultural events at DIDYOUKNOW.",
-    url: "https://didyouknow.com",
+    url: "https://didyouknow.in",
     siteName: "DIDYOUKNOW",
     type: "website",
   },
@@ -56,7 +56,7 @@ export default function HomePage() {
     "@type": "WebSite",
     "name": "DIDYOUKNOW",
     "alternateName": ["didyouknow", "did you know", "DID YOU KNOW"],
-    "url": "https://didyouknow.com",
+    "url": "https://didyouknow.in",
     "description": "Ideas, essays, and perspectives on technology, business, and culture."
   };
 

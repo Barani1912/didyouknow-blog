@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Terms and Conditions",
   description: "Read the Terms and Conditions and terms of use of DIDYOUKNOW.",
   alternates: {
-    canonical: "https://didyouknow.com/terms",
+    canonical: "https://didyouknow.in/terms",
   },
   openGraph: {
     title: "Terms and Conditions | DIDYOUKNOW",
     description: "Read the Terms and Conditions and terms of use of DIDYOUKNOW.",
-    url: "https://didyouknow.com/terms",
+    url: "https://didyouknow.in/terms",
     siteName: "DIDYOUKNOW",
   },
 };

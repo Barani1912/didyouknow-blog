@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Get in touch with the editorial team at DIDYOUKNOW.",
   keywords: ["contact didyouknow", "contact did you know", "support", "editorial team", "contributions"],
   alternates: {
-    canonical: "https://didyouknow.com/contact",
+    canonical: "https://didyouknow.in/contact",
   },
   openGraph: {
     title: "Contact | DIDYOUKNOW",
     description: "Get in touch with the editorial team at DIDYOUKNOW.",
-    url: "https://didyouknow.com/contact",
+    url: "https://didyouknow.in/contact",
     siteName: "DIDYOUKNOW",
   },
 };
@@ -23,11 +23,11 @@ export default function ContactPage() {
     "@type": "ContactPage",
     "name": "Contact DIDYOUKNOW",
     "description": "Get in touch with the editorial team at DIDYOUKNOW.",
-    "url": "https://didyouknow.com/contact",
+    "url": "https://didyouknow.in/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "DIDYOUKNOW",
-      "url": "https://didyouknow.com"
+      "url": "https://didyouknow.in"
     }
   };
 

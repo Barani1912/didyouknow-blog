@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Learn about the privacy practices, data collection, and cookie policies of DIDYOUKNOW.",
   alternates: {
-    canonical: "https://didyouknow.com/privacy-policy",
+    canonical: "https://didyouknow.in/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy | DIDYOUKNOW",
     description: "Learn about the privacy practices, data collection, and cookie policies of DIDYOUKNOW.",
-    url: "https://didyouknow.com/privacy-policy",
+    url: "https://didyouknow.in/privacy-policy",
     siteName: "DIDYOUKNOW",
   },
 };
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="font-serif text-xl md:text-2xl font-normal text-black">1. Introduction</h2>
           <p>
-            DIDYOUKNOW (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the publication website located at didyouknow.com. This Privacy Policy details how we collect, use, and safeguard personal data when you visit and interact with our website. By using our website, you agree to the practices outlined in this policy.
+            DIDYOUKNOW (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the publication website located at didyouknow.in. This Privacy Policy details how we collect, use, and safeguard personal data when you visit and interact with our website. By using our website, you agree to the practices outlined in this policy.
           </p>
         </section>
 

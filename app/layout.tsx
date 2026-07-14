@@ -54,6 +54,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "DIDYOUKNOW",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "DIDYOUKNOW Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DIDYOUKNOW",
+    description: "Ideas, essays, and perspectives on technology, business, and culture.",
+    images: ["/logo.png"],
   },
 };
 

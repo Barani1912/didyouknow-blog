@@ -34,6 +34,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const categorySpecific = categoryKeywordsMap[slug] || [];
   const keywords = ["did you know", "didyouknow", category.name.toLowerCase(), ...categorySpecific];
 
+  const imageUrl = ["health", "tech", "trending"].includes(slug)
+    ? `/images/${slug}.webp`
+    : "/logo.png";
+
   return {
     title: category.name,
     description: category.description,
@@ -46,6 +50,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: category.description,
       url: `https://didyouknow.in/category/${category.slug}`,
       siteName: "DIDYOUKNOW",
+      images: [
+        {
+          url: imageUrl,
+          alt: `${category.name} on DIDYOUKNOW`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${category.name} | DIDYOUKNOW`,
+      description: category.description,
+      images: [imageUrl],
     },
   };
 }

@@ -23,6 +23,20 @@ export const metadata: Metadata = {
     description: "Explore the fascinating, gravity-defying, and historically rich facts that slip quietly under the mainstream radar.",
     url: "https://didyouknow.in/unnoticed",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "DIDYOUKNOW Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unnoticed Stories & Facts | DIDYOUKNOW",
+    description: "Explore the fascinating, gravity-defying, and historically rich facts that slip quietly under the mainstream radar.",
+    images: ["/logo.png"],
   },
 };
 

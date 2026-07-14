@@ -29,6 +29,20 @@ export const metadata: Metadata = {
     url: "https://didyouknow.in",
     siteName: "DIDYOUKNOW",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "DIDYOUKNOW Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DIDYOUKNOW | Tech, Health & Trending Stories",
+    description: "Explore thought-provoking essays, perspectives, and did you know facts about technology, health, and trending cultural events at DIDYOUKNOW.",
+    images: ["/logo.png"],
   },
 };
 
